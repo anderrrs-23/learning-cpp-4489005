@@ -22,7 +22,7 @@ enum class cow_purpose {dairy, meat, hide, pet};// assigns "dairy" = 0, "meat" =
 enum class grocery_section {canned, frozen, meat, laundry, dairy, bakery};
 // above, the variables "meat" and "dairy" are conlficting because they are assigned different values in the enum
 // so if you ran std::cout << "a = " << a << std::endl; in main below, you would get an error as a means two things
-// however, "enum class" (vs enum, see 02_12b), now the compiler will assume that the enums are not integers
+// however, "enum class" (vs enum, see 02_12b), now the compiler will assume that the enums are not integers and you can have multiple enums with overlapping variables without errors
 
 int main(){
     // since meat is defined above in enum class, this will overwrite "meat" from 1 to 8
