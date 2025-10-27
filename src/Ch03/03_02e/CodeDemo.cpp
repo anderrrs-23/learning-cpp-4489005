@@ -40,7 +40,7 @@ private:
     int age;
     cow_purpose purpose;
 };
-
+/*
 int main(){
     cow my_cow;
     my_cow.age = 5;
@@ -51,4 +51,4 @@ int main(){
     
     std::cout << std::endl << std::endl;
     return (0);
-}
+}*/
