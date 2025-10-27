@@ -28,6 +28,13 @@ public:
     void set_age(int new_age){
         age = new_age;
     }
+    // setter functions for name and purpose
+    void set_name(std::string new_name){
+        name = new_name;
+    }
+    void set_purpose(cow_purpose new_purpose){
+        purpose = new_purpose;
+    }
 private:
     std::string name;
     int age;
@@ -43,10 +50,13 @@ int main(){
     
     std::cout << std::endl << std::endl;
     // my addition to the code
-    // using the setter function to modify age
-    std::cout << "After two years... " << std::endl;
-    my_cow.set_age(int(9));
-    std::cout << my_cow.get_name() << " will be " << my_cow.get_age() << " years old." << std::endl;
+    // using the setter function to modify age, name, and purpose
+    std::cout << "New Cow " << std::endl;
+    my_cow.set_name("Heffa");
+    my_cow.set_age(int(2));
+    my_cow.set_purpose(cow_purpose::dairy);
+    std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
+    std::cout << my_cow.get_name() << " is type-" << (int) my_cow.get_purpose() << std::endl;
 
     std::cout << std::endl << std::endl;
     return (0);
