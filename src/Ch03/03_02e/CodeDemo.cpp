@@ -2,6 +2,9 @@
 // Exercise 03_02
 // Classes, by Eduardo Corpeño 
 
+/*
+***************************** CODE WILL NOT RUN- SEE 03_03E FOR SOLUTION **********************************
+*/
 #include <iostream>
 #include <string>
 
@@ -9,12 +12,21 @@ enum class cow_purpose {dairy, meat, hide, pet};
 
 class cow{
 public:
-    cow(std::string name_i, int age_i, cow_purpose purpose_i){
-        name = name_i;
+/*
+- constructor function (called when an object is created)
+- implicit constructor is always implemented which simply creates object to allocate memory for the data members
+- "overloading a function"- defining a function with the same name of an already defined function but with a different set of parameters
+    - A classic constructor overload recives initialization values for all the data members
+- constructor function is the only function that does not specify a return type
+- constructor name must be the same as the name of the class (cow)
+*/ 
+    cow(std::string name_i, int age_i, cow_purpose purpose_i){ // "_i" for "initializer"
+        name = name_i; // initializing objects (this case, assigning values to members)
         age = age_i;
         purpose = purpose_i;
     }
-    std::string get_name() const{
+    // getter functions: get_name, get_age, get_purpose
+    std::string get_name() const{ // returns a string, use const to ensure you do not modify object (aka "const correctness"
         return name;
     }
     int get_age() const{
