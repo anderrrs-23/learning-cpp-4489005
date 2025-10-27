@@ -2,6 +2,9 @@
 // Exercise 03_03
 // Using Classes, by Eduardo Corpeño 
 
+/*
+****************** SAME CODE AS 03_02e AND WILL NOT RUN- SOLUTION IN 03_03e ***********************************
+*/
 #include <iostream>
 #include <string>
 
@@ -28,7 +31,7 @@ private:
     int age;
     cow_purpose purpose;
 };
-
+/*
 int main(){
     cow my_cow;
     my_cow.age = 5;
@@ -39,4 +42,4 @@ int main(){
     
     std::cout << std::endl << std::endl;
     return (0);
-}
+}*/
